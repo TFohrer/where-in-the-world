@@ -1,0 +1,13 @@
+html,* {
+  font-size: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--font-color);
+}
+
+p {
+  @include font-size(14);
+}
+
+.text-bold {
+  font-weight: 600;
+}

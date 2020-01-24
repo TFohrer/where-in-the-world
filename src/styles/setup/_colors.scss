@@ -1,0 +1,19 @@
+// default dark theme
+$color-bg: #2B3945;
+$color-font: white;
+
+
+:root {
+  --bg-color: rgb(34, 45, 54);
+  --bg-color--secondary: #2B3945;
+  --font-color: #fff;
+}
+
+[data-theme="light"] {
+  --bg-color: rgb(250, 250, 250);
+  --bg-color--secondary: white;
+  --font-color: black;
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --heading-color: #818cab;
+}
