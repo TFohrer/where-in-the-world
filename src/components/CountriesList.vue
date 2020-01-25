@@ -14,6 +14,19 @@
           <img class="card__image mw-100" :src="country.flag">
           <div class="card__content">
             <p class="card__title">{{country.name}}</p>
+
+            <!-- TODO move key values to config array -->
+            <dl class="card__list">
+              <dt class="card__list-key">Population: </dt>
+              <!-- TODO Number format (thousand) -->
+              <dd class="card__list-value">{{country.population}}</dd>
+
+              <dt class="card__list-key">Region: </dt>
+              <dd class="card__list-value">{{ country.region }}</dd>
+
+              <dt class="card__list-key">Capital:</dt>
+              <dd class="card__list-value">{{ country.capital }}</dd>
+            </dl>
           </div>
         </a>
       </div>
