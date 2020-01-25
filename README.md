@@ -1,14 +1,13 @@
 # countries-overview
 
-Showcase/challenge project using [REST Countries API](https://restcountries.eu) to show a simple country list. Project build with vue.js and uses Gitlabs CI/CD.
+Showcase/challenge project using [REST Countries API](https://restcountries.eu) to show a simple country list, allow searching and filtering and show a detail view of a country. Project build with vue.js and uses Gitlabs CI/CD.
 Challenge idea from [Frontend Mentor](https://www.frontendmentor.io/)
 
 - Vue.js
-- webpack
 - bootstrap (grid only)
 - mobile-first
 - BEM
-
+- Gitlab CI/CD 
 
 ## Initial requirements
 
