@@ -9,11 +9,11 @@
     </div>
 
     <div class="row">
-      <div class="col-3" v-for="country in countries" :key="country">
-        <a class="card" :href='"#/country/" + country'>
-          <img class="card__image mw-100" src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+      <div class="col-3 mb-5" v-for="country in countries" :key="country.alpha2Code">
+        <a class="card h-100" :href='"#/country/" + country.alpha2Code'>
+          <img class="card__image mw-100" :src="country.flag">
           <div class="card__content">
-            <p class="card__title">India</p>
+            <p class="card__title">{{country.name}}</p>
           </div>
         </a>
       </div>
@@ -22,16 +22,18 @@
 </template>
 
 <script>
+import countriesApi from '../api/countries'
+
 export default {
   name: 'CountriesList',
   data () {
     return {
       countries: [0, 1, 2]
     }
+  },
+  async mounted () {
+    const { data } = await countriesApi.get()
+    this.countries = data
   }
 }
 </script>
-
-<style scoped>
-
-</style>

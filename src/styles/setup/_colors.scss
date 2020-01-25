@@ -4,7 +4,7 @@
 :root {
   --bg-color: rgb(34, 45, 54);
   --bg-color--secondary: #2B3945;
-  --font-color: #fff;
+  --font-color: white;
   --shadow-color: rgb(33,44,52);
 }
 
@@ -12,7 +12,9 @@
   --bg-color: rgb(250, 250, 250);
   --bg-color--secondary: white;
   --font-color: black;
-  --primary-color: #9A97F3;
+  --shadow-color: rgb(246,246,246);
+
+  /*--primary-color: #9A97F3;
   --secondary-color: #818cab;
-  --heading-color: #818cab;
+  --heading-color: #818cab;*/
 }
