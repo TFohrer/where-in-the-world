@@ -1,6 +1,13 @@
 .card {
   background-color: var(--bg-color--secondary);
   box-shadow: 0 0 5px 3px var(--shadow-color);
+  display: block;
+  transition: box-shadow 1s;
+
+  &:hover {
+    transition: box-shadow 1s;
+    box-shadow: 0 0 7px 10px var(--shadow-color);
+  }
 }
 
 .card__content {

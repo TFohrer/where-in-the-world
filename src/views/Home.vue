@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import CountriesList from "@/components/CountriesList";
+import CountriesList from '@/components/CountriesList'
 
 export default {
   name: 'home',

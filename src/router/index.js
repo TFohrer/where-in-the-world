@@ -5,21 +5,20 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: Home
-    },
-    {
-        path: '/country/:isoCode',
-        name: 'country-detail',
-        component: () => import(/* webpackChunkName: "country-detail" */ '../views/CountryDetail.vue')
-    }
+  {
+    path: '/',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/country/:isoCode',
+    name: 'country-detail',
+    component: () => import(/* webpackChunkName: "country-detail" */ '../views/CountryDetail.vue')
+  }
 ]
 
 const router = new VueRouter({
-    routes,
-    mode: 'history'
-});
+  routes
+})
 
 export default router
