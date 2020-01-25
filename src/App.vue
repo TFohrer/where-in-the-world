@@ -11,7 +11,7 @@
                 <router-link to="/country/12">Country</router-link>
             </nav>-->
         </header>
-        <main role="main" class="flex-grow-1">
+        <main role="main">
             <router-view/>
         </main>
         <!--<footer>
