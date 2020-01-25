@@ -8,7 +8,7 @@
             <!--<nav class="header__nav col-auto">
                 <router-link to="/">Home</router-link>
                 |
-                <router-link to="/about">About</router-link>
+                <router-link to="/country/12">Country</router-link>
             </nav>-->
         </header>
         <main role="main" class="flex-grow-1">

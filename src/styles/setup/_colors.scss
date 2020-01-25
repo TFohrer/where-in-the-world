@@ -1,12 +1,11 @@
 // default dark theme
-$color-bg: #2B3945;
-$color-font: white;
 
-
+// TODO hex or rgb
 :root {
   --bg-color: rgb(34, 45, 54);
   --bg-color--secondary: #2B3945;
   --font-color: #fff;
+  --shadow-color: rgb(33,44,52);
 }
 
 [data-theme="light"] {

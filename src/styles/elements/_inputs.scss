@@ -1,3 +1,4 @@
+/** theme toggle  **/
 .switch{
   transform: scale(0.75);
 
@@ -133,10 +134,10 @@
   top: 5px;
   filter: blur(1px);
   background-color: #f5daaa;
-  box-shadow: 0px 0px 10px #f5deb4,
-  0px 0px 20px #f5deb4,
-  0px 0px 30px #f5deb4,
-  inset 0px 0px 2px #efd3a3;
+  box-shadow: 0 0 10px #f5deb4,
+  0 0 20px #f5deb4,
+  0 0 30px #f5deb4,
+  inset 0 0 2px #efd3a3;
   transform-origin: 53px 10px;
   animation: moon .7s forwards ease;
 }
@@ -160,5 +161,25 @@
     background-color: transparent;
     box-shadow: 5px -1px 0px #fff;
     filter: blur(0px);
+  }
+}
+
+/** theme toggle end  **/
+
+/** search **/
+
+.search__wrapper {
+  margin: 50px 0;
+}
+
+.search__input {
+  padding: 10px 20px;
+  min-width: 500px;
+  background-color: var(--bg-color--secondary);
+  border:none;
+  box-shadow: 0 0 5px 3px var(--shadow-color);
+
+  &:focus {
+    outline: none;
   }
 }

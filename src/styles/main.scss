@@ -8,6 +8,7 @@
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/sizing";
 
 // setup
 @import "./setup/mixins";
@@ -19,3 +20,4 @@
 
 // elements
 @import "./elements/inputs";
+@import "./elements/card";
