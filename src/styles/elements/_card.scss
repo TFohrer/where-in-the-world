@@ -2,7 +2,7 @@
   background-color: var(--bg-color--secondary);
   box-shadow: 0 0 5px 3px var(--shadow-color);
   display: block;
-  transition: box-shadow 1s;
+  transition: box-shadow 1s, background-color .75s;
 
   &:hover {
     transition: box-shadow 1s;

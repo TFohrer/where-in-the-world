@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import Main from './js/main'
+import VueVirtualScroller from 'vue-virtual-scroller'
 
 Vue.config.productionTip = false
 
@@ -16,6 +17,8 @@ new Vue({
     }
   }
 }).$mount('#app')
+
+Vue.use(VueVirtualScroller)
 
 // eslint-disable-next-line no-unused-vars
 let main = new Main()

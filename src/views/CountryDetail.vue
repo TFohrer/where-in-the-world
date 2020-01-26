@@ -10,7 +10,7 @@
         <img :src="country.flag" class="mw-100">
       </div>
       <div class="offset-1 col-5">
-        <h1>{{country.name}}</h1>
+        <h1 class="mb-5">{{country.name}}</h1>
         <div class="row mb-5">
           <div class="col-6">
             <dl>
@@ -44,7 +44,7 @@
             </dl>
           </div>
         </div>
-        <div class="row">
+        <div class="row" v-if="country.borders.length > 0">
           <p class="col-auto">Border Countries:</p>
           <div class="col">
               <a v-for="borderCountry in country.borders" v-bind:key="borderCountry" class="button d-inline-block mr-2 mb-2" :href="'#/country/'+borderCountry">

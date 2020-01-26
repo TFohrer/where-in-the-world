@@ -7,6 +7,9 @@ export default {
   get () {
     return axios.get(baseUrl + '/all')
   },
+  getByName (name) {
+    return axios.get(baseUrl + '/name/' + name)
+  },
   getByISOCode (isoCode) {
     return axios.get(baseUrl + '/alpha/' + isoCode)
   }
