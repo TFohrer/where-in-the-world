@@ -1,0 +1,23 @@
+.button {
+  background: var(--bg-color--secondary);
+  border: none;
+  padding: 10px 30px;
+  box-shadow: 0 0 4px 6px var(--shadow-color);
+  transition: box-shadow .75s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transition: box-shadow .75s;
+    box-shadow: none;
+  }
+}
+
+.button--back {
+  &:before{
+    content: '<-';
+    padding-right: 10px;
+  }
+}

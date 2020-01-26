@@ -12,7 +12,7 @@
             </nav>-->
         </header>
         <main role="main">
-            <router-view/>
+            <router-view :key="$route.fullPath"/>
         </main>
         <!--<footer>
             &copy; T

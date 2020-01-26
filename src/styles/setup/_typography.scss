@@ -4,10 +4,22 @@ html,* {
   color: var(--font-color);
 }
 
+h1 {
+  @include font-size(25);
+}
+
+a {
+  color: var(--font-color);
+}
+
 p {
-  @include font-size(14);
+  //@include font-size(14);
+}
+
+.text-light {
+  font-weight: 300;
 }
 
 .text-bold {
-  font-weight: 600;
+  font-weight: 800;
 }

@@ -9,6 +9,7 @@
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities/spacing";
 @import "~bootstrap/scss/utilities/sizing";
+@import "~bootstrap/scss/utilities/display";
 
 // setup
 @import "./setup/mixins";
@@ -22,3 +23,5 @@
 // elements
 @import "./elements/inputs";
 @import "./elements/card";
+@import "./elements/buttons";
+@import "./elements/lists";
