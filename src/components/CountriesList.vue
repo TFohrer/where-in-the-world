@@ -1,10 +1,19 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row mt-5 mb-5">
       <div class="col">
         <div class="search__wrapper">
           <input type="search" class="search__input" v-model="search" v-on:search="this.searchCountries" v-on:keyup="this.searchCountries" placeholder="Search for a country">
         </div>
+      </div>
+      <div class="col ml-auto">
+        <select>
+          <option value="">Filter by Region</option>
+          <option value="">Africa</option>
+          <option value="">America</option>
+          <option value="">Asia</option>
+          <option value="">Asia</option>
+        </select>
       </div>
     </div>
 

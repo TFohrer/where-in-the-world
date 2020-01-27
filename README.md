@@ -4,10 +4,12 @@ Showcase/challenge project using [REST Countries API](https://restcountries.eu) 
 Challenge idea from [Frontend Mentor](https://www.frontendmentor.io/)
 
 - Vue.js
-- bootstrap (grid only)
-- mobile-first
+- bootstrap (parts)
 - BEM
 - Gitlab CI/CD 
+- axios
+
+[Website](https://tfohrer.gitlab.io/where-in-the-world/#/)
 
 ## Initial requirements
 
