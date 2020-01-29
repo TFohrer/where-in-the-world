@@ -7,12 +7,12 @@
         </div>
       </div>
       <div class="col ml-auto">
-        <select>
-          <option value="">Filter by Region</option>
-          <option value="">Africa</option>
-          <option value="">America</option>
-          <option value="">Asia</option>
-          <option value="">Asia</option>
+        <select class="js-custom-select" multiple data-placeholder="Filter by Region">
+          <option>Africa</option>
+          <option>America</option>
+          <option>Asia</option>
+          <option>Europe</option>
+          <option>Oceania</option>
         </select>
       </div>
     </div>
