@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="row mt-5 mb-5">
-      <div class="col">
+    <div class="row mt-4 mb-5 mt-md-5">
+      <div class="col-12 col-md">
         <div class="search__wrapper">
           <input type="search" class="search__input" v-model="search" v-on:search="this.searchCountries" v-on:keyup="this.searchCountries" placeholder="Search for a country">
         </div>
       </div>
-      <div class="col ml-auto">
+      <div class="col ml-auto mt-4">
         <select class="js-custom-select" multiple data-placeholder="Filter by Region">
           <option>Africa</option>
           <option>America</option>
@@ -17,8 +17,8 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-3 mb-5" v-for="country in countries" :key="country.alpha2Code">
+    <div class="row mt-2 ml-3 mr-3">
+      <div class="col-12 col-md-3 mb-5" v-for="country in countries" :key="country.alpha2Code">
         <a class="card h-100" :href='"#/country/" + country.alpha2Code'>
           <img class="card__image mw-100" :src="country.flag">
           <div class="card__content">

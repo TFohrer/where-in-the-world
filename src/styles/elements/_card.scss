@@ -3,6 +3,8 @@
   box-shadow: 0 0 5px 3px var(--shadow-color);
   display: block;
   transition: box-shadow 1s, background-color .75s;
+  overflow: hidden;
+  border-radius: 5px;
 
   &:hover {
     transition: box-shadow 1s;
