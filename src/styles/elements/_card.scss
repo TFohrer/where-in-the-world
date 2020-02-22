@@ -20,3 +20,16 @@
   float: left;
   padding-right: 5px;
 }
+
+.card__image-container {
+  @include media-breakpoint-up(md){
+    height: 160px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(lg){
+    height: 225px;
+  }
+}

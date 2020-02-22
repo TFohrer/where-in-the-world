@@ -3,7 +3,7 @@ import $ from 'jquery'
 export default class Main {
   constructor () {
     this.initThemeSwitch()
-    this.initCustomSelect()
+    // this.initCustomSelect()
   }
 
   initThemeSwitch () {

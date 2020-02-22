@@ -6,21 +6,24 @@
           <input type="search" class="search__input" v-model="search" v-on:search="this.searchCountries" v-on:keyup="this.searchCountries" placeholder="Search for a country">
         </div>
       </div>
-      <div class="col ml-auto mt-4">
-        <select class="js-custom-select" multiple data-placeholder="Filter by Region">
+      <!--<div class="col ml-auto mt-4">
+        <select class="js-custom-select" data-placeholder="Filter by Region">
+          <option value="">Filter by Region</option>
           <option>Africa</option>
           <option>America</option>
           <option>Asia</option>
           <option>Europe</option>
           <option>Oceania</option>
         </select>
-      </div>
+      </div>-->
     </div>
 
     <div class="row mt-2 ml-3 mr-3">
-      <div class="col-12 col-md-3 mb-5" v-for="country in countries" :key="country.alpha2Code">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5" v-for="country in countries" :key="country.alpha2Code">
         <a class="card h-100" :href='"#/country/" + country.alpha2Code'>
-          <img class="card__image mw-100" :src="country.flag">
+          <div class="card__image-container">
+            <img class="card__image mw-100" :src="country.flag" :alt="'flag '+country.name">
+          </div>
           <div class="card__content">
             <p class="card__title">{{country.name}}</p>
 
