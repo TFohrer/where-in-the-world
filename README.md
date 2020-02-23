@@ -9,7 +9,7 @@ Challenge idea from [Frontend Mentor](https://www.frontendmentor.io/)
 - Gitlab CI/CD 
 - axios
 
-[Website](https://tfohrer.gitlab.io/where-in-the-world/#/)
+:earth_africa: [Website](https://tfohrer.gitlab.io/where-in-the-world/#/)
 
 ## Initial requirements
 
