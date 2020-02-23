@@ -1,18 +1,18 @@
 <template>
-  <div class="country detail">
+  <div class="country detail mb-5">
     <div class="row mt-3 mb-5">
       <div class="col">
         <button @click="$router.back()" class="button button--back">Back</button>
       </div>
     </div>
     <div class="row" v-if="country">
-      <div class="col-5">
+      <div class="col-12 col-md-5">
         <img :src="country.flag" class="mw-100">
       </div>
-      <div class="offset-1 col-5">
+      <div class="col-12 offset-md-1 col-md-5 mt-5">
         <h1 class="mb-5">{{country.name}}</h1>
         <div class="row mb-5">
-          <div class="col-6">
+          <div class="col-12 col-md-6 mb-3">
             <dl>
               <dt>Native Name: </dt>
               <dd>{{country.nativeName}}</dd>
@@ -30,7 +30,7 @@
               <dd>{{ country.capital }}</dd>
             </dl>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <dl>
               <dt>Top Level Domain:</dt>
               <dd>{{ country.topLevelDomain[0]}}</dd>
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="row" v-if="country.borders.length > 0">
-          <p class="col-auto">Border Countries:</p>
+          <p class="col-12 col-md-auto">Border Countries:</p>
           <div class="col">
               <a v-for="borderCountry in country.borders" v-bind:key="borderCountry" class="button d-inline-block mr-2 mb-2" :href="'#/country/'+borderCountry">
                 {{borderCountry}}
