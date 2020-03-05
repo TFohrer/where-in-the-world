@@ -22,7 +22,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5" v-for="country in countries" :key="country.alpha2Code">
         <a class="card h-100" :href='"#/country/" + country.alpha2Code'>
           <div class="card__image-container">
-            <img class="card__image mw-100" :src="country.flag" :alt="'flag '+country.name">
+            <img class="card__image mw-100" v-lazy="country.flag" :alt="'flag '+country.name">
           </div>
           <div class="card__content">
             <p class="card__title">{{country.name}}</p>
@@ -74,17 +74,15 @@ export default {
     async fetchCountries () {
       this.show404 = false
       const { data } = await countriesApi.get()
-      this.countries = data
+      this.countries = Object.freeze(data)
     },
     async fetchFilteredCountries () {
       this.show404 = false
 
       try {
         const { data } = await countriesApi.getByName(this.search)
-        this.countries = data
+        this.countries = Object.freeze(data)
       } catch (e) {
-        // eslint-disable-next-line no-console
-        console.log(e)
         this.countries = []
         this.show404 = true
       }

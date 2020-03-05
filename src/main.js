@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueLazyload from 'vue-lazyload'
 import router from './router'
 import Main from './js/main'
 import VueVirtualScroller from 'vue-virtual-scroller'
 
 Vue.config.productionTip = false
+Vue.use(VueLazyload)
 
 new Vue({
   router,

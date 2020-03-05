@@ -9,7 +9,7 @@ Challenge idea from [Frontend Mentor](https://www.frontendmentor.io/)
 - Gitlab CI/CD 
 - axios
 
-[Website](https://tfohrer.gitlab.io/where-in-the-world/#/)
+:earth_africa: [Website](https://tfohrer.gitlab.io/where-in-the-world/#/)
 
 ## Initial requirements
 
@@ -26,7 +26,7 @@ Users should be able to:
 
 Project boilerplate setup with vue-cli.
 
-Local setup without Docker: 
+Local setup: 
 
 ```
 yarn install
@@ -46,16 +46,6 @@ yarn build
 ```
 yarn lint
 ```
-
-Local setup with Docker (TODO):
-
-``` # build docker container
-docker build .```
-Run docker container:
-
-```docker run -it -p 8080:80 --rm --name countries-overview .
-```
-
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
